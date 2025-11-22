@@ -26,7 +26,7 @@ class ExecuteTest {
             asUri = false
         )
         val databasePointer = sqlite3ConnectHelper.openConnection(testDbFile, sqliteFlags, null)
-//        sqlite3ConnectHelper.setUpConnectionForeignKeyConstraintAvailability(databasePointer, true)
+        sqlite3ConnectHelper.setUpConnectionForeignKeyConstraintAvailability(databasePointer, true)
 //        sqlite3ConnectHelper.setUpConnectionLookaside(databasePointer, 128, 32)
     }
 

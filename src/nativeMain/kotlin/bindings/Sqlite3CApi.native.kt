@@ -30,9 +30,6 @@ actual class Sqlite3Api {
         result
     }
 
-    //    actual suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, vararg variadicArguments: Any?): Int = bindings.sqlite3.sqlite3_db_config(db.nativePointer, op, *arrayOf(*variadicArguments))
-    actual suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, arg1: Any?): Int = bindings.sqlite3.sqlite3_db_config(db.nativePointer, op, *arrayOf(arg1))
-    actual suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, arg1: Any?, arg2: Any?): Int = bindings.sqlite3.sqlite3_db_config(db.nativePointer, op, *arrayOf(arg1, arg2))
-    actual suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, arg1: Any?, arg2: Any?, arg3: Any?): Int = bindings.sqlite3.sqlite3_db_config(db.nativePointer, op, *arrayOf(arg1, arg2, arg3))
+    actual suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, vararg variadicArguments: Any?): Int = bindings.sqlite3.sqlite3_db_config(db.nativePointer, op, *variadicArguments)
 
 }
