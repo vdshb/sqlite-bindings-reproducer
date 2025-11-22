@@ -1,0 +1,9 @@
+package = bindings.sqlite3
+headers = sqlite3.h
+headerFilter = sqlite3*.h
+
+noStringConversion = sqlite3_prepare_v2 sqlite3_prepare_v3
+excludedFunctions = sqlite3_mutex_held sqlite3_mutex_notheld sqlite3_column_database_name sqlite3_column_database_name16 sqlite3_column_table_name sqlite3_column_table_name16 sqlite3_column_origin_name sqlite3_column_origin_name16 sqlite3_normalized_sql sqlite3_snapshot_get sqlite3_snapshot_free sqlite3_snapshot_open sqlite3_snapshot_cmp sqlite3_snapshot_recover sqlite3_stmt_scanstatus sqlite3_stmt_scanstatus_reset sqlite3_unlock_notify sqlite3_win32_set_directory sqlite3_win32_set_directory8 sqlite3_win32_set_directory16
+
+linkerOpts.linux_x64 = -lpthread -ldl
+linkerOpts.macos_x64 = -lpthread -ldl
