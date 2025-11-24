@@ -1,6 +1,6 @@
 #### Steps to reproduce:
 
-Run `./gradlew --stacktrace macosX64Test` to get compilation exception:
+Run `./gradlew --stacktrace macosX64Test` to get runtime exception:
 
 ```
 * Exception is:
