@@ -19,9 +19,6 @@ expect class Sqlite3Api {
 
     suspend fun sqlite3_open_v2(filename: String, ppDb: Ref<DatabasePointer?>, flags: Int, zVfs: String?): Int
 
-    //    suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, vararg variadicArguments: Any?): Int
-    suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, arg1: Any?): Int
-    suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, arg1: Any?, arg2: Any?): Int
-    suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, arg1: Any?, arg2: Any?, arg3: Any?): Int
+    suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, vararg variadicArguments: Any?): Int
 
 }

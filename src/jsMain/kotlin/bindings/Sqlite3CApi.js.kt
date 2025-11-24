@@ -17,10 +17,6 @@ actual class Sqlite3Api {
 
     actual suspend fun sqlite3_open_v2(filename: String, ppDb: Ref<DatabasePointer?>, flags: Int, zVfs: String?): Int = TODO("js implementation is irrelevant")
 
-//    actual suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, vararg variadicArguments: Any?): Int = callFunction("sqlite3_db_config", arrayOf(db.nativePointer, op, *variadicArguments))
-//    actual suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, vararg variadicArguments: Any?): Int = callFunction("sqlite3_db_config", arrayOf(db.nativePointer, op) + variadicArguments))
-    actual suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, arg1: Any?): Int = TODO("js implementation is irrelevant")
-    actual suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, arg1: Any?, arg2: Any?): Int = TODO("js implementation is irrelevant")
-    actual suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, arg1: Any?, arg2: Any?, arg3: Any?): Int = TODO("js implementation is irrelevant")
+    actual suspend fun sqlite3_db_config(db: DatabasePointer, op: Int, vararg variadicArguments: Any?): Int = TODO("js implementation is irrelevant")
 
 }

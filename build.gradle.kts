@@ -66,7 +66,11 @@ kotlin {
             }
         }
         val nativeMain by getting {}
-        val nativeTest by getting {}
+        val nativeTest by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-io-core:0.8.1")
+            }
+        }
         val jsTest by getting {
             dependencies {
                 implementation(npm("@sqlite.org/sqlite-wasm", "3.50.4-build1"))
